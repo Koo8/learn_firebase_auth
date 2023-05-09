@@ -34,8 +34,3 @@ inspired by https://www.youtube.com/watch?v=2hR-uWjBAgw
 
 - npm i react-toastify, add its style sheet
 
-### how to
-
-- how to clear all input values after signin?
-- how to notify user he/she is signed in? how to know if a user signed in, who is the user?
-- auth.currentUser info is not passed to Header immediately, should I use Context for this
