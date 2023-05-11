@@ -8,33 +8,28 @@ const userReducer = (state, action) => {
       return {
         ...state,
         user: payload.user,
-        login: payload.login,
       };
     case 'SIGN_UP':
       return {
         ...state,
         user: payload.user,
-        login: payload.login,
       };
 
     case 'SIGN WITH GOOGLE':
       return {
         ...state,
         user: payload.user,
-        login: payload.login,
       };
     case 'SIGN_OUT':
       return {
         ...state,
         user: payload.user,
-        login: payload.login,
       };
   }
 };
 
 export const initialValue = {
-  user: localStorage.getItem('user') || { email: '', password: '' },
-  login: localStorage.getItem('login') || false,
+  user: JSON.parse(localStorage.getItem('user')) || null,
 };
 
 export default userReducer;

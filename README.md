@@ -28,14 +28,8 @@ inspired by https://www.youtube.com/watch?v=2hR-uWjBAgw
   > > There are methods from 'auth' for 'sendEmailVerification' and 'sendPasswordResetEmail'. I am not using these functionalities here.
   > > use auth package, async all methods used inside this package, otherwise data saved inside useContext (with useReducer) won't in sync with auth.currentUser data.
   > > also put await into try block as a convention to catch all possible errors.
-- fireStore: for CRUD operations.
+- fireStore: for CRUD operations. For persistant login even after refreshing the page, in context provider, use useEffect to constantly update localStorage.setItem() whenever the user info changed.
 
 ### install react toastify
 
 - npm i react-toastify, add its style sheet
-
-### how to
-
-- how to clear all input values after signin?
-- how to notify user he/she is signed in? how to know if a user signed in, who is the user?
-- auth.currentUser info is not passed to Header immediately, should I use Context for this
