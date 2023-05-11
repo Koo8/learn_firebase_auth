@@ -1,7 +1,5 @@
 # Learn firebase
 
-inspired by https://www.youtube.com/watch?v=2hR-uWjBAgw
-
 ### setup
 
 - npm create vite@latest nancyMarket -- --template react
@@ -33,7 +31,3 @@ inspired by https://www.youtube.com/watch?v=2hR-uWjBAgw
 ### install react toastify
 
 - npm i react-toastify, add its style sheet
-<<<<<<< HEAD
-=======
-
->>>>>>> a709df9099faa3e3ae7a2e5ebdb71eaf41196001
